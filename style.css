@@ -1,0 +1,127 @@
+/* Corps principal */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0a1b2d, #122e4b);
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+}
+
+/* Conteneur principal */
+.container {
+    flex: 1;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 0;
+    text-align: center;
+}
+
+/* Logo */
+.logo {
+    width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-out; /* Animation douce à l'apparition */
+}
+
+/* Barre de recherche */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.search-bar {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.search-bar:hover {
+    background-color: #444444; /* Change de couleur au survol */
+}
+
+.search-bar::placeholder {
+    color: #cccccc;
+}
+
+/* Bouton de recherche */
+.search-button {
+    padding: 10px 20px;
+    background-color: #007acc;
+    color: #fff;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #005f99;
+}
+
+/* Message d'accroche */
+.intro-text {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #b3b3b3;
+    animation: fadeIn 1.5s ease-in;
+}
+
+/* Boutons sous la barre de recherche */
+.action-buttons {
+    margin-top: 20px;
+}
+
+.action-button {
+    background-color: #007acc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+    background-color: #005f99;
+}
+
+/* Pied de page */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f1f1f1;
+    color: #333333;
+    width: 100%;
+    font-size: 14px;
+    border-top: 1px solid #ccc;
+}
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
